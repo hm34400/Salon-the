@@ -1,0 +1,9 @@
+.ptit{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+#tof {
+    height: 10px;
+   background-color: yellow;
+}
