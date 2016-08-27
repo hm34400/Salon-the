@@ -1,34 +1,23 @@
-var cbpAnimatedHeader = (function() {
+//window.innerWidth
+//window.innerHeight
+//window.outerWidth
+//window.outerHeight
 
-	var docElem = document.documentElement,
-		header = document.querySelector( '.cbp-af-header' ),
-		didScroll = false,
-		changeHeaderOn = 300;
+$("header").css("height", window.innerHeight + 100 ); // Header Taille 
+$(".grosse").css("height", window.innerHeight) ; // Header Taille 
 
-	function init() {
-		window.addEventListener( 'scroll', function( event ) {
-			if( !didScroll ) {
-				didScroll = true;
-				setTimeout( scrollPage, 250 );
-			}
-		}, false );
-	}
 
-	function scrollPage() {
-		var sy = scrollY();
-		if ( sy >= changeHeaderOn ) {
-			classie.add( header, 'cbp-af-header-shrink' );
-		}
-		else {
-			classie.remove( header, 'cbp-af-header-shrink' );
-		}
-		didScroll = false;
-	}
+$(document).ready(function(){ 
+          
+   $(window).scroll(function(){  /*Fonction ecoute le scroll*****/
+  var scrollTop = $(this).scrollTop();
 
-	function scrollY() {
-		return window.pageYOffset || docElem.scrollTop;
-	}
-
-	init();
-
-})();
+    if($(window).scrollTop() > 100){ /*Nombre de pixcel pour condition ok***/
+      
+          $('.navbar-default').addClass("bigcontent");/*Aplique la classe****/
+  }
+  else{$('.navbar-default').removeClass("bigcontent");}
+  
+       });
+       
+    });
