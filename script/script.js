@@ -4,6 +4,7 @@
 //window.outerHeight
 
 $("header").css("height", window.innerHeight + 100 ); // Header Taille 
+
 //$(".grosse").css("height", window.innerHeight) ; // Header Taille
 
 
