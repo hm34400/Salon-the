@@ -1,14 +1,10 @@
+/*----------NavBar---------*/
+
 .navbar-default{  /* Bar de nav/header initiale ******/
     font-size: 30px;
     opacity: 0.8;
     padding: 45px;  
-   -webkit-transition: all 0.150s ease-out;
--moz-transition: all 0.150s ease-out;
--ms-transition: all 0.150s ease-out;
--o-transition: all 0.150s ease-out;
-transition: all 0.150s ease-out;
-
-        
+ 
 }
  
 .navbar-default.bigcontent{ /* Bar de nav* *****/
@@ -17,11 +13,8 @@ transition: all 0.150s ease-out;
         padding: 0px;
         background-color: white;
         opacity: 1 ;
-        -webkit-transition: all 0.150s ease-out;
--moz-transition: all 0.150s ease-out;
--ms-transition: all 0.150s ease-out;
--o-transition: all 0.150s ease-out;
-transition: all 0.150s ease-out;
+
+  transition: all 0.5s ease-in-out;
 
 	    
 }
@@ -50,19 +43,32 @@ transition: all 0.150s ease-out;
     justify-content: space-between;
     height: 87px;
     list-style: none;
-    -moz-transition: all 0.50s ease-out;
--ms-transition: all 0.50s ease-out;
--o-transition: all 0.50s ease-out;
-transition: all 0.50s ease-out;
+   
  }
 
  .contact.cache{/*cache contact de la navbar********/
      visibility: hidden;
-     -moz-transition: all 0.150s ease-out;
--ms-transition: all 0.150s ease-out;
--o-transition: all 0.150s ease-out;
-transition: all 0.150s ease-out;
+     
  }
+ 
+ img{
+     height: 50px;
+    margin-left: 379px;
+    height: 146px;
+    position: absolute;
+    top: 15px;
+ }
+ 
+ img.logoNav{
+     transition: all 0.5s ease-in-out;
+    margin-left: 0px;
+    height: 95px;
+    position: absolute;
+    top: -5px;
+
+ }
+ 
+/*-----------Pages----------*/
  
 header{  /* Bouton menu ******/ 
     background: url("img/patisseries-sobre.jpg");
