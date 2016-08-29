@@ -1,6 +1,8 @@
+
 body{
     background-image:url("img/107.jpg")
 }
+
 
 /*----------NavBar---------*/
 
@@ -17,7 +19,9 @@ body{
         padding: 0px;
         background-color: white;
         opacity: 1 ;
+
         transition: all 0.5s ease-in-out;
+
 
 	    
 }
@@ -79,11 +83,13 @@ header{  /* Bouton menu ******/
     background-position: center;
     background-size: cover;
 }
+
 header>h1{
     font-size: 70px;
     position: relative;
     top: 180px;
 }
+
 
 .ptit{
     display: flex;
@@ -98,9 +104,9 @@ header>h1{
     flex-direction:column;
     width: 500px;
 
-
 }
 .ptit > div > p{
+
  padding-top: 50px;
  font-size: large;
 }
@@ -111,6 +117,14 @@ header>h1{
 .grosse{
     width: 90%;
     background-color:rgba(255, 255, 255, 0.9);
+
+ padding-top: 50px;   
+}
+
+
+.grosse{
+    width: 90%;
+
     margin: auto;
     height: 420px;
     padding: 29px;
@@ -119,6 +133,7 @@ header>h1{
 .grosse > h3 {
     margin: 0px;
     padding: 0px;
+
     font-size: 45px;
     font-family: DS Arabic;
 }
@@ -141,5 +156,6 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=134, St
 
 }
 footer{
+
     height: 60px;
 }
